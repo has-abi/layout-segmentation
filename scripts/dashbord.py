@@ -5,7 +5,7 @@ from inference import LayoutSegmenter, filter_bboxes
 from pdf2image.pdf2image import convert_from_bytes
 from PIL import Image, ImageDraw
 
-st.title("SKYLARK RESUME PARSER")
+st.title("RESUME LAYOUT SEGMENTATION")
 uploaded_pdf = st.file_uploader("", type="pdf")
 
 def draw_rectangles(image: Image.Image, boxes: List[List[float]]) -> Image.Image:
